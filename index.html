@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta character="utf-8">
+		<title>WebTip</title>
+
+		<!-- Onsen Library CDN -->
+		<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+		<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+		<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+		
+		<!-- Style Sheet -->
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+	<body>
+		<ons-page>
+			<ons-toolbar>
+				<div class="center">WebTip</div>
+			</ons-toolbar>
+			<section>
+				<div>
+					<input class="text-input text-input--material" placeholder="Bill Amount" type="text" id="billAmount">
+				</div>
+				<div>
+					<ons-range id="tipRange" value="18" min="0" max="50" step=".5">
+					</ons-range>
+					<output id="percentOut">18%</output>
+				</div>
+				<div>
+					<ons-button id=="btnCalculator" modifier="large">Calculate Tip</ons-button>
+				</div>
+
+			</section>
+			<section>
+				<output id="result"></output>
+			</section>
+		</ons-page>
+		<script src="webtip.js"></script>
+	</body>
+</html>
+
