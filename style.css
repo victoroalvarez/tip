@@ -1,8 +1,16 @@
-section {
+div {
+	margin-bottom: 20px;
+}
+
+#form {
 	padding: 12px;
 }
 
-div {
+#billAmount {
+	width:100%;
+}
+
+#myinput {
 	margin-bottom: 20px;
 }
 
@@ -13,5 +21,3 @@ input {
 #tipRange {
 	width: 75%;
 }
-
-
