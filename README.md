@@ -1,1 +1,2 @@
-# webtip
+# tip
+Tip Calculator web app
