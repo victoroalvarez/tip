@@ -1,58 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-	<head>
-		<meta character="utf-8">
-		<title>Tip Calculator</title>
+<html lang="en">
 
-		<!-- Onsen Library CDN -->
-		<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
-		<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
-		<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
-		
-		<!-- Style Sheet -->
-		<link rel="stylesheet" href="style.css">
+<head>
+	<meta character="utf-8">
+	<title>Tip Calculator</title>
 
-	</head>
+	<!-- Onsen Library CDN -->
+	<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+	<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+	<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
 
-	<body>
-		<!-- Wraps all page content -->
-		<ons-page>
+	<!-- Style Sheet -->
+	<link rel="stylesheet" href="style.css">
 
-			<!-- Toolbar  -->
-			<ons-toolbar>
-				<div class="center">Tip Calculator</div>
-			</ons-toolbar>
+</head>
 
-			<!-- Form section -->
-			<section id="form"> 
-				<!-- holds text input -->
-				<div id="myinput">
-					<!-- Input bill amount -->
-					<input  id="billAmount" class="text-input text-input--material" placeholder="Bill Amount" type="text">
-				</div>
+<body>
+	<!-- Wraps all page content -->
+	<ons-page>
+		<!-- Toolbar -->
+		<ons-toolbar>
+			<div class="center">Tip Calculator</div>
+		</ons-toolbar>
 
-				<!-- Range Slider for tip percent -->
-				<div>
-					<ons-range id="tipRange" value="18" min="0" max="50" step=".5"> <!-- Slide by a half-percent -->
-					</ons-range>
+		<!-- Form section -->
+		<section id="form">
+			<!-- holds text input -->
+			<div id="myinput">
+				<!-- Input bill amount -->
+				<input id="billAmount" class="text-input text-input--material" placeholder="Bill Amount" type="text">
+			</div>
 
-					<!-- Output Choosen tip percent. Show 15% by default -->
-					<output id="percentOut">15%</output>
-				</div>
+			<!-- Range Slider for tip percent -->
+			<div>
+				<ons-range id="tipRange" value="18" min="0" max="50" step="1">
+					<!-- Slide by a half-percent -->
+				</ons-range>
+
+				<!-- Output Choosen tip percent. Show 15% by default -->
+				<output id="percentOut">15%</output>
+			</div>
 
 
-				<div>
-					<ons-button id="buttonCalculate" modifier="large">Calculate Tip</ons-button>
-				</div>
+			<div>
+				<ons-button id="buttonCalculate" modifier="large">Calculate</ons-button>
+			</div>
 
-			</section>
+		</section>
 
-			<!-- Results section -->
-			<section>
-				<!-- shows tip amount and total bill -->
-				<output id="result"></output>
-			</section>
-		</ons-page>
-		<script src="tip.js"></script>
-	</body>
+		<!-- Results section -->
+		<section id="output">
+			<!-- shows tip amount and total bill -->
+			<output id="result"></output>
+		</section>
+	</ons-page>
+	<script src="tip.js"></script>
+</body>
+
 </html>

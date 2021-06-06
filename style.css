@@ -1,23 +1,35 @@
+/* Margin for all divs */
 div {
 	margin-bottom: 20px;
 }
 
+/* Padding for the form section */
 #form {
 	padding: 12px;
 }
 
+/* Padding for the output section */
+#output {
+	padding: 12px;
+	font-size: 2em;
+}
+
+/* Width of the bill amount input. */
 #billAmount {
 	width:100%;
 }
 
-#myinput {
-	margin-bottom: 20px;
-}
-
+/* Width of the input tag */
 input {
 	width: 100%;
 }
 
+/* Bottom margin for the myinput div  */
+#myinput {
+	margin-bottom: 20px;
+}
+
+/* Width of the ons-range range selector. */
 #tipRange {
-	width: 75%;
+	width: 100%;
 }
